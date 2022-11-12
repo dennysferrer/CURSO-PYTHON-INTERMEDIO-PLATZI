@@ -3,11 +3,16 @@ def divisors(num):
     return divisors
 
 def run():
-    num = int(input("Digite un numero: "))
-    print(divisors(num))
-    print("Termino mi programa ...")
+    try:
+        num = int(input("Digite un numero: "))
+        if (num <= 0):
+            raise ValueError('Digite un numero entero positivo ...')
+        print(divisors(num))
+        print("Termino mi programa ...")
 
-
+    except ValueError as ve:
+        print(ve)
+        return False
 
 
 if __name__ == '__main__':
