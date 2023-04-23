@@ -1,16 +1,16 @@
+
 import math
 
 def run():
-    dict = {i: i**3 for i in range(1,101) if (i % 3 != 0)}
-    dict2 = {i: math.sqrt(i) for i in range(1,1000)}
+    """ my_dict = {}
+    for item in range(0,100):
+        my_dict[item] = item**3 """
+    
+    my_dict = {i: i**3 for i in range(1, 101) if (i%3 != 0)}
+    my_dict2 = {i: math.sqrt(i) for i in range(1,1001)}
 
-    """ for numero in range(0,101):
-        if (numero % 3 != 0):
-            dict[numero] = numero**3 """
+    print(my_dict2)
+    
 
-    # print(dict)
-    print(dict2)
- 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     run()
